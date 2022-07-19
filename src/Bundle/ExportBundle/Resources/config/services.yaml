@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: false
+        autoconfigure: true
+        public: false
+
+    App\Bundle\ExportBundle\:
+        resource: '../../*'
+        exclude: '../../{DependencyInjection,Entity}'
